@@ -27,16 +27,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-slate-50 dark:bg-dark/80 backdrop-blur-sm z-50">
+    <nav className="fixed top-0 w-full bg-slate-50 dark:bg-dark/80 backdrop-blur-sm z-50 border-b border-slate-200 dark:border-dark/50">
       <div className="container max-w-7xl mx-auto px-4">
         {/* Desktop Menu */}
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 px-4">
           <Link href="/" className="text-xl font-bold text-primary">
             MyPortfolio&trade;
           </Link>
 
           {/* Desktop Menus */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 ">
             {menuItems.map((item) => {
               const isActive = pathname === item.href;
               return (

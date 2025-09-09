@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-slate-50 dark:bg-dark/80 text-black dark:text-white py-6 ">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4">
+    <footer className="w-full bg-slate-50 dark:bg-dark/80 text-black dark:text-white py-6 border-t border-slate-200 dark:border-dark/50 mt-10">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-10">
         <div className="font-medium">
           &copy; {new Date().getFullYear()} MyPortfolio. All rights reserved.
         </div>
-        <div className="flex space-x-4">
+        <div className="flex space-x-6">
           <Link
             href="https://github.com/"
             target="_blank"
