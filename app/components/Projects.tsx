@@ -25,7 +25,9 @@ const Projects = () => {
               />
             </div>
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-            <p className="mb-4">{project.description}</p>
+            <p className="mb-4 text-gray-600 dark:text-gray-300">
+              {project.description}
+            </p>
 
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech) => (
