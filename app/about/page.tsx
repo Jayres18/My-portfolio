@@ -66,6 +66,75 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Experience Section*/}
+      <section className="mb-12 px-4">
+        <h2 className="section-title">Experience</h2>
+
+        <div className="max-w-5xl mx-auto space-y-8">
+          <div className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 hover:scale-[1.02] transition-transform">
+            <h3 className="text-xl font-semibold mb-2">
+              Administrative Assistant III
+            </h3>
+            <div className="flex flex-col md:flex-row gap-2 mb-2">
+              <p className="text-primary font-semibold">
+                Batangas State University |
+              </p>
+              <p className="text-primary font-semibold">Nov 2024 - Present</p>
+            </div>
+            <ul className="text-secondary list-disc list-inside space-y-2">
+              <li>
+                Provides administrative and clerical support for research,
+                academic, and innovation projects.
+              </li>
+              <li>
+                Prepares, organizes, and maintains official documents,
+                correspondence, and reports.
+              </li>
+              <li>
+                Assists in project management tasks, including monitoring
+                progress and facilitating communication among stakeholders.
+              </li>
+              <li>
+                Supports procurement processes and logistical arrangements when
+                needed.
+              </li>
+              <li>
+                Ensures compliance with university policies, timelines, and
+                reporting requirements.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section className="mb-12 px-4">
+        <h2 className="section-title">Education</h2>
+
+        <div className="max-w-5xl mx-auto space-y-8">
+          <div className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 hover:scale-[1.02] transition-transform">
+            <h3 className="text-xl font-semibold mb-2">
+              Bachelor of Science in Information Technology
+            </h3>
+            <div className="flex flex-col md:flex-row gap-2 mb-2">
+              <p className="text-primary font-semibold">
+                Batangas State University |
+              </p>
+              <p className="text-primary font-semibold">2019 - 2023</p>
+            </div>
+            <ul className="text-secondary space-y-2">
+              <li>
+                I graduated from Batangas State University with a Bachelor of
+                Science in Information Technology, Cum Laude. My studies
+                equipped me with strong technical skills in programming,
+                database management, and web development, which I continue to
+                apply in both academic projects and professional work.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

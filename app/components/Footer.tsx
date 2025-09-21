@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="w-full bg-slate-50 dark:bg-dark/80 text-black dark:text-white py-3 border-t border-slate-200 dark:border-dark/50 mt-10">
       <div className="p-8 md:p-10">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col-2 justify-between items-center">
+          <div className="flex flex-wrap flex-col-2 justify-between items-center">
             <div>
               <Link href="/" className="font-bold text-primary">
                 MyPortfolio&trade;
