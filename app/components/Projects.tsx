@@ -13,7 +13,7 @@ const Projects = () => {
         {project.map((project) => (
           <article
             key={project.title}
-            className="bg-white dark:bg-dark/80 rounded-lg shadow-md p-7 hover:shadow-xl transition-shadow duration-300"
+            className="bg-white dark:bg-dark/80 rounded-lg shadow-md p-7 duration-300 hover:scale-[1.02] transition-transform"
           >
             <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg mb-4">
               <Image

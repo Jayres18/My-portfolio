@@ -1,7 +1,7 @@
 import { blogs } from "@/contents/blogs";
 import Link from "next/link";
 import React from "react";
-import { FaCalendar, FaCalendarAlt, FaClock } from "react-icons/fa";
+import { FaCalendarAlt, FaClock } from "react-icons/fa";
 
 const Blogs = () => {
   return (
@@ -13,7 +13,7 @@ const Blogs = () => {
         {blogs.map((blog) => (
           <article
             key={blog.slug}
-            className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
+            className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 hover:scale-[1.02] transition-transform duration-300"
           >
             <Link href={`/blogs/${blog.slug}`}>
               <h3 className="text-xl font-semibold mb-2 hover:text-primary transition-colors">
