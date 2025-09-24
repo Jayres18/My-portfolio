@@ -80,7 +80,7 @@ const About = () => {
               <p className="text-primary font-semibold">
                 Batangas State University |
               </p>
-              <p className="text-primary font-semibold">Nov 2024 - Present</p>
+              <p className="text-primary font-semibold">Oct 2024 - Present</p>
             </div>
             <ul className="text-secondary list-disc list-inside space-y-2">
               <li>
@@ -102,6 +102,61 @@ const About = () => {
               <li>
                 Ensures compliance with university policies, timelines, and
                 reporting requirements.
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 hover:scale-[1.02] transition-transform">
+            <h3 className="text-xl font-semibold mb-2">Social Media Manager</h3>
+            <div className="flex flex-col md:flex-row mb-2">
+              <p className="text-primary font-semibold">
+                Freelance | Dec 2023 - Feb 2024
+              </p>
+            </div>
+            <ul className="text-secondary list-disc list-inside space-y-2">
+              <li>
+                Monitored analytics and insights to track performance and
+                improve engagement.
+              </li>
+              <li>
+                Responded to messages, comments, and inquiries to maintain
+                community interaction.
+              </li>
+              <li>
+                Collaborated with teams to align social media activities with
+                organizational goals.
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 hover:scale-[1.02] transition-transform">
+            <h3 className="text-xl font-semibold mb-2">
+              Intern Website Developer
+            </h3>
+            <div className="flex flex-col md:flex-row mb-2">
+              <p className="text-primary font-semibold">
+                Center for Innovation in Engineering Education (CIEE) | Jan 2023
+                - May 2023
+              </p>
+            </div>
+            <ul className="text-secondary list-disc list-inside space-y-2">
+              <li>
+                Assisted in developing and maintaining the official website of
+                CIEE.
+              </li>
+              <li>
+                Provided technical support to staff for software and
+                system-related concerns.
+              </li>
+              <li>
+                Troubleshot and repaired hardware issues, including printers and
+                system units.
+              </li>
+              <li>
+                Supported daily IT operations to ensure smooth workflow within
+                the Center.
+              </li>
+              <li>
+                Collaborated with the team in implementing digital solutions for
+                office efficiency.
               </li>
             </ul>
           </div>
