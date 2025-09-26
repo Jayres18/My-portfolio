@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
@@ -24,9 +25,12 @@ const ContactPage = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold">Email</h3>
-                <p className="text-secondary">
+                <Link
+                  href="mailto:josephdaniel.lansang@g.batstate-u.edu.ph"
+                  className="text-secondary hover:text-primary"
+                >
                   josephdaniel.lansang@g.batstate-u.edu.ph
-                </p>
+                </Link>
               </div>
             </div>
             <div className="flex p-2 items-center gap-4 mb-5">
@@ -62,15 +66,6 @@ const ContactPage = () => {
                   placeholder="Enter your Name"
                   className="mb-4 px-4 py-3 border rounded-lg dark:text-white border-gray-300 dark:border-gray-600 bg-white text-gray-500 dark:bg-dark focus:outline-none focus:ring-2 focus:ring-primary"
                 />
-                <label htmlFor="address" className="text-md font-semibold">
-                  Address
-                </label>
-                <input
-                  type="text"
-                  id="address"
-                  placeholder="Enter your Address"
-                  className="mb-4 px-4 py-3 border rounded-lg dark:text-white border-gray-300 dark:border-gray-600 bg-white text-gray-500 dark:bg-dark focus:outline-none focus:ring-2 focus:ring-primary"
-                />
                 <label htmlFor="email" className="text-md font-semibold">
                   Email
                 </label>
@@ -78,6 +73,15 @@ const ContactPage = () => {
                   type="email"
                   id="email"
                   placeholder="Enter your email"
+                  className="mb-4 px-4 py-3 border rounded-lg dark:text-white border-gray-300 dark:border-gray-600 bg-white text-gray-500 dark:bg-dark focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <label htmlFor="message" className="text-md font-semibold">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows={4}
+                  placeholder="Enter your message here...."
                   className="mb-4 px-4 py-3 border rounded-lg dark:text-white border-gray-300 dark:border-gray-600 bg-white text-gray-500 dark:bg-dark focus:outline-none focus:ring-2 focus:ring-primary"
                 />
                 <button className="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors">
