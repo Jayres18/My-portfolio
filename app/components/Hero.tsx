@@ -1,25 +1,46 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeInUp, scaleIn } from "@/utils/animations";
 
 const Hero = () => {
   return (
     <section className="py-40 mb-30 container max-w-7xl mx-auto px-4">
       <div className="max-w-3xl mx-auto text-center">
-        <Image
-          className="rounded-full mx-auto mb-4 border-1 border-slate-300 dark:border-slate-600"
-          src="/profile.png"
-          alt={"My profile picture."}
-          width={180}
-          height={180}
-        />
-        <h1 className="text-4xl font-bold mb-2">
+        <motion.div
+          className="flex flex-col items-center"
+          {...scaleIn}
+          transition={{ delay: 0.2 }}
+        >
+          <Image
+            className="rounded-full mx-auto mb-4 border-1 border-slate-300 dark:border-slate-600"
+            src="/profile.png"
+            alt={"My profile picture."}
+            width={180}
+            height={180}
+          />
+        </motion.div>
+        <motion.h1
+          {...fadeInUp}
+          transition={{ delay: 0.3 }}
+          className="text-4xl font-bold mb-2"
+        >
           Hi, I'm <span className="text-primary">Joseph Lansang</span>
-        </h1>
-        <p className="text-lg text-black dark:text-white mb-4 font-medium">
+        </motion.h1>
+        <motion.p
+          {...fadeInUp}
+          transition={{ delay: 0.4 }}
+          className="text-lg text-black dark:text-white mb-4 font-medium"
+        >
           Web Developer | Administrative Assistant | Tech Enthusiast
-        </p>
-        <div className="container flex flex-row justify-center items-center space-x-4">
+        </motion.p>
+        <motion.div
+          {...fadeInUp}
+          transition={{ delay: 0.5 }}
+          className="container flex flex-row justify-center items-center space-x-4"
+        >
           <Link
             href="https://github.com/"
             target="_blank"
@@ -51,15 +72,19 @@ const Hero = () => {
               <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
             </svg>
           </Link>
-        </div>
-        <div className="container flex flex-col md:flex-row justify-center items-center space-x-0 md:space-x-4 space-y-3 md:space-y-0 mt-5">
+        </motion.div>
+        <motion.div
+          {...fadeInUp}
+          transition={{ delay: 0.6 }}
+          className="container flex flex-col md:flex-row justify-center items-center space-x-0 md:space-x-4 space-y-3 md:space-y-0 mt-5"
+        >
           <button className="min-w-[140px] bg-transparent hover:bg-blue-500 dark:text-white font-medium hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
             View Projects
           </button>
           <button className="min-w-[140px] bg-transparent hover:bg-blue-500 dark:text-white font-medium hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
             Contact Me
           </button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
