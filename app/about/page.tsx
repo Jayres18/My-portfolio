@@ -8,7 +8,7 @@ const About = () => {
 
       {/* Bio Section*/}
       <section className="mb-12 px-4">
-        <p className="max-w-5xl mx-auto text-secondary text-center">
+        <p className="max-w-5xl mx-auto text-center">
           I’m <span className="font-bold">Joseph Daniel Lansang</span>, a web
           developer passionate about building web-based systems and applications
           that make processes more efficient. I work with Next.js, React,

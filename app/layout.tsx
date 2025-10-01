@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white transition-colors dark:bg-slate-900 dark:text-white pt-16 min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white transition-colors dark:bg-slate-900 dark:text-white pt-16 min-h-screen flex flex-col `}
       >
         <ThemeProvider>
           <Navbar />
